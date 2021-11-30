@@ -1,0 +1,41 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style media="screen">
+      h2{
+         margin-top:150px;
+         font-size:40px;
+      }
+      h1{
+         font-size:60px;
+      }
+      input[type=submit]{
+         background-color:black;
+         color:white;
+         cursor:pointer;
+         padding: 16px 32px;
+         float:center;
+<!--         margin-left:400px;-->
+
+      }
+      body{
+         background-image: url("{% static '04.jpg'%}");
+         background-size:cover;
+         background-repeat:no-repeat;
+         background-attachement:fixed;
+         float:right;
+      }
+
+    </style>
+</head>
+<body style="text-align:center">
+    <h2>Bienvenu au</h2>
+    <h1>Système de Prévision des Prix des Maisons</h1>
+    <form action="predict">
+        <input type="submit" value="Prédire">
+    </form>
+</body>
+</html>
